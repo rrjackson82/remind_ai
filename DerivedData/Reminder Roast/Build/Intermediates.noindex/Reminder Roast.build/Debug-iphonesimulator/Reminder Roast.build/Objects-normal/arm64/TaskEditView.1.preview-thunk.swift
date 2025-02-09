@@ -9,23 +9,25 @@ import SwiftUI
 struct TaskEditView: View {
     @Environment(\.dismiss) private var dismiss
     @ObservedObject var taskManager: TaskManager
+    let listId: UUID
     
     @State private var title: String
     @State private var description: String
     @State private var dueDate: Date
-    @State private var effortLevel: Int
+    @State private var selectedSectionId: UUID
     
     let task: Task
     let isNewTask: Bool
     
-    init(task: Task, taskManager: TaskManager, isNewTask: Bool = false) {
+    init(task: Task, taskManager: TaskManager, listId: UUID, sectionId: UUID, isNewTask: Bool = false) {
         self.task = task
         self.taskManager = taskManager
+        self.listId = listId
+        self._title = State(initialValue: task.title)
+        self._description = State(initialValue: task.description ?? "")
+        self._dueDate = State(initialValue: task.dueDate)
+        self._selectedSectionId = State(initialValue: sectionId)
         self.isNewTask = isNewTask
-        _title = State(initialValue: task.title)
-        _description = State(initialValue: task.description ?? "")
-        _dueDate = State(initialValue: task.dueDate)
-        _effortLevel = State(initialValue: task.effortLevel)
     }
     
     var body: some View {
@@ -36,20 +38,27 @@ struct TaskEditView: View {
                     TextField(__designTimeString("#8944_2", fallback: "Description"), text: $description)
                 }
                 
-                Section(header: Text(__designTimeString("#8944_3", fallback: "Due Date"))) {
-                    DatePicker(__designTimeString("#8944_4", fallback: "Due Date"), selection: $dueDate)
+                Section(header: Text(__designTimeString("#8944_3", fallback: "Section"))) {
+                    if let list = taskManager.lists.first(where: { $0.id == listId }) {
+                        Picker(__designTimeString("#8944_4", fallback: "Section"), selection: $selectedSectionId) {
+                            ForEach(list.sections) { section in
+                                Text(section.name)
+                                    .tag(section.id)
+                            }
+                        }
+                    }
                 }
                 
-                Section(header: Text(__designTimeString("#8944_5", fallback: "Effort Level (1-5)"))) {
-                    Stepper("Effort: \(effortLevel)", value: $effortLevel, in: __designTimeInteger("#8944_6", fallback: 1)...__designTimeInteger("#8944_7", fallback: 5))
+                Section(header: Text(__designTimeString("#8944_5", fallback: "Due Date"))) {
+                    DatePicker(__designTimeString("#8944_6", fallback: "Due Date"), selection: $dueDate)
                 }
             }
-            .navigationTitle(isNewTask ? __designTimeString("#8944_8", fallback: "New Task") : __designTimeString("#8944_9", fallback: "Edit Task"))
+            .navigationTitle(isNewTask ? __designTimeString("#8944_7", fallback: "New Task") : __designTimeString("#8944_8", fallback: "Edit Task"))
             .navigationBarItems(
-                leading: Button(__designTimeString("#8944_10", fallback: "Cancel")) {
+                leading: Button(__designTimeString("#8944_9", fallback: "Cancel")) {
                     dismiss()
                 },
-                trailing: Button(__designTimeString("#8944_11", fallback: "Save")) {
+                trailing: Button(__designTimeString("#8944_10", fallback: "Save")) {
                     saveTask()
                 }
                 .disabled(title.isEmpty)
@@ -64,13 +73,14 @@ struct TaskEditView: View {
             description: description.isEmpty ? nil : description,
             dueDate: dueDate,
             isCompleted: task.isCompleted,
-            effortLevel: effortLevel
+            sectionId: selectedSectionId,
+            listId: listId
         )
         
         if isNewTask {
-            taskManager.addTask(updatedTask)
+            taskManager.addTask(updatedTask, to: listId)
         } else {
-            taskManager.updateTask(updatedTask)
+            taskManager.updateTask(updatedTask, in: listId)
         }
         dismiss()
     }

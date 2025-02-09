@@ -52,6 +52,7 @@ class TaskManager: ObservableObject {
         tasks[listId]?[task.sectionId]?.append(task)
         sortTasks(in: listId)
         saveTasks()
+        
     }
     
     func deleteTask(at indexSet: IndexSet, from listId: UUID, sectionId: UUID) {

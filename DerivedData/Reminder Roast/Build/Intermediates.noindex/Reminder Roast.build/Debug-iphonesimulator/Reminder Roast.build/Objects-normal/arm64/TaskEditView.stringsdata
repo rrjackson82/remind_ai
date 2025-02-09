@@ -6,88 +6,88 @@
         "comment": "",
         "key": "New Task",
         "location": {
-          "startingColumn": 42,
-          "startingLine": 50
+          "startingColumn": 82,
+          "startingLine": 56
         }
       },
       {
         "comment": "",
         "key": "Edit Task",
         "location": {
-          "startingColumn": 55,
-          "startingLine": 50
+          "startingColumn": 136,
+          "startingLine": 56
         }
       },
       {
         "comment": "",
         "key": "Cancel",
         "location": {
-          "startingColumn": 33,
-          "startingLine": 52
+          "startingColumn": 73,
+          "startingLine": 58
         }
       },
       {
         "comment": "",
         "key": "Save",
         "location": {
-          "startingColumn": 34,
-          "startingLine": 55
+          "startingColumn": 75,
+          "startingLine": 61
         }
       },
       {
         "comment": "",
         "key": "Task Details",
         "location": {
-          "startingColumn": 38,
-          "startingLine": 30
+          "startingColumn": 78,
+          "startingLine": 36
         }
       },
       {
         "comment": "",
         "key": "Section",
         "location": {
-          "startingColumn": 38,
-          "startingLine": 35
+          "startingColumn": 78,
+          "startingLine": 41
         }
       },
       {
         "comment": "",
         "key": "Due Date",
         "location": {
-          "startingColumn": 38,
-          "startingLine": 46
+          "startingColumn": 78,
+          "startingLine": 52
         }
       },
       {
         "comment": "",
         "key": "Title",
         "location": {
-          "startingColumn": 31,
-          "startingLine": 31
+          "startingColumn": 71,
+          "startingLine": 37
         }
       },
       {
         "comment": "",
         "key": "Description",
         "location": {
-          "startingColumn": 31,
-          "startingLine": 32
+          "startingColumn": 71,
+          "startingLine": 38
         }
       },
       {
         "comment": "",
         "key": "Section",
         "location": {
-          "startingColumn": 32,
-          "startingLine": 37
+          "startingColumn": 72,
+          "startingLine": 43
         }
       },
       {
         "comment": "",
         "key": "Due Date",
         "location": {
-          "startingColumn": 32,
-          "startingLine": 47
+          "startingColumn": 72,
+          "startingLine": 53
         }
       }
     ]

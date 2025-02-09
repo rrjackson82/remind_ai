@@ -6,12 +6,21 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 @main
 struct Reminder_RoastApp: App {
+    init() {
+           requestNotificationPermission()
+       }
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
     }
+    func requestNotificationPermission() {
+            let center = UNUserNotificationCenter.current()
+            center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            }
+        }
 }
