@@ -10,28 +10,29 @@ import UserNotifications
 class NotificationManager {
     static let shared = NotificationManager()
 
-    func scheduleNotification(title: String, body: String, date: Date) {
+    func scheduleNotification(title: String, body: String, date: Date, id: UUID) {
         let content = UNMutableNotificationContent()
-        content.title = title
+        content.title = "Due date for task " + title
         content.body = body
         content.sound = .default
 
-        let triggerDate = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute], from: date)
-        let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: false)
+        let trigger = UNCalendarNotificationTrigger(
+            dateMatching: Calendar.current.dateComponents([.year, .month, .day, .hour, .minute], from: date),
+            repeats: false
+        )
 
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        let request = UNNotificationRequest(identifier: id.uuidString, content: content, trigger: trigger)
 
         UNUserNotificationCenter.current().add(request) { error in
             if let error = error {
-                print("Failed to schedule notification: \(error.localizedDescription)")
+                print("Error scheduling notification: \(error.localizedDescription)")
             } else {
-                print("Notification scheduled for \(date)")
+                print("Notification scheduled for task: \(title) at \(date)")
             }
         }
     }
-    // New function to cancel a notification
     func cancelNotification(for taskId: UUID) {
         UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [taskId.uuidString])
-        print("Notification canceled for task: \(taskId)")
+        print("Notification canceled for task ID: \(taskId)")
     }
 }

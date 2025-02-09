@@ -57,13 +57,21 @@ class TaskManager: ObservableObject {
         // Directly use task.dueDate (since it's non-optional)
         NotificationManager.shared.scheduleNotification(
             title: task.title,
-            body: task.description ?? "No description provided",  // Using default text if no description is available
-            date: task.dueDate  // Directly passing task.dueDate since it's non-optional
+            body: task.description ?? "No description provided",
+            date: task.dueDate,
+            id: task.id  // Pass task ID so we can remove it later
         )
     }
     
     func deleteTask(at indexSet: IndexSet, from listId: UUID, sectionId: UUID) {
         if var sectionTasks = tasks[listId]?[sectionId] {
+            for index in indexSet {
+                let taskToDelete = sectionTasks[index]
+                
+                // Cancel notification before deleting the task
+                NotificationManager.shared.cancelNotification(for: taskToDelete.id)
+            }
+            
             sectionTasks.remove(atOffsets: indexSet)
             tasks[listId]?[sectionId] = sectionTasks
             saveTasks()
@@ -78,14 +86,13 @@ class TaskManager: ObservableObject {
             sortTasks(in: listId)
             saveTasks()
             
-            // Cancel the old notification
-            NotificationManager.shared.cancelNotification(for: oldTask!.id)
+            NotificationManager.shared.cancelNotification(for: updatedTask.id)
 
-            // Schedule a new notification with the updated due date
             NotificationManager.shared.scheduleNotification(
                 title: updatedTask.title,
                 body: updatedTask.description ?? "No description provided",
-                date: updatedTask.dueDate
+                date: updatedTask.dueDate,
+                id: updatedTask.id
             )
         }
     }

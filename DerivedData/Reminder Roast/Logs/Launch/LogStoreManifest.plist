@@ -67,6 +67,67 @@
 			<key>uniqueIdentifier</key>
 			<string>3265FD88-E577-435C-9B5B-B1E8A6944B1E</string>
 		</dict>
+		<key>79E0DC49-E92F-4760-97C7-A4CC029BF44E</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>AEAE09CA-616E-4C4D-B9C7-548D1BC7D9D0</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>2</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Reminder Roast-2025.02.09_15-21-55--0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>2</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reminder Roast project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reminder Roast</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Reminder Roast</string>
+			<key>timeStartedRecording</key>
+			<real>760825315.02376997</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Reminder Roast</string>
+			<key>uniqueIdentifier</key>
+			<string>79E0DC49-E92F-4760-97C7-A4CC029BF44E</string>
+		</dict>
 		<key>7AC9E63B-7653-4ADF-A546-AEF822324EB0</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -127,6 +188,67 @@
 			<string>Run Reminder Roast</string>
 			<key>uniqueIdentifier</key>
 			<string>7AC9E63B-7653-4ADF-A546-AEF822324EB0</string>
+		</dict>
+		<key>8608F490-A827-415A-B5D3-8929B1FEDD1B</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>2811BAB1-E138-4C48-A76B-B5880B2A0CDE</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>2</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>2</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Reminder Roast-2025.02.09_15-29-11--0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>2</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>2</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reminder Roast project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reminder Roast</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Reminder Roast</string>
+			<key>timeStartedRecording</key>
+			<real>760825751.87964594</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Reminder Roast</string>
+			<key>uniqueIdentifier</key>
+			<string>8608F490-A827-415A-B5D3-8929B1FEDD1B</string>
 		</dict>
 		<key>91EF9C7C-F59D-42E7-A062-40881E07F341</key>
 		<dict>
@@ -249,6 +371,189 @@
 			<string>Run Reminder Roast</string>
 			<key>uniqueIdentifier</key>
 			<string>969538FE-811A-41C3-863B-5514AE5320D4</string>
+		</dict>
+		<key>A55288CD-1858-4667-B94A-B64D793202C7</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>6A4E9DC3-97DF-417A-9EF4-44B8A6F10232</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>2</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Reminder Roast-2025.02.09_15-23-36--0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>2</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reminder Roast project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reminder Roast</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Reminder Roast</string>
+			<key>timeStartedRecording</key>
+			<real>760825416.31827199</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Reminder Roast</string>
+			<key>uniqueIdentifier</key>
+			<string>A55288CD-1858-4667-B94A-B64D793202C7</string>
+		</dict>
+		<key>A60D20F1-E9D6-4806-88CE-CDD8216DC389</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>2441B580-626E-4903-8E97-4C0FBE0C6814</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>3</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Reminder Roast-2025.02.09_15-31-50--0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>3</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reminder Roast project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reminder Roast</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Reminder Roast</string>
+			<key>timeStartedRecording</key>
+			<real>760825910.97535205</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Reminder Roast</string>
+			<key>uniqueIdentifier</key>
+			<string>A60D20F1-E9D6-4806-88CE-CDD8216DC389</string>
+		</dict>
+		<key>B4DB7B9D-72CF-42E6-BBFB-EC1DB8086A8F</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>2793B0F0-0400-4840-BF1C-8625ABBD8072</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>3</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Reminder Roast-2025.02.09_15-35-20--0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>3</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reminder Roast project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reminder Roast</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Reminder Roast</string>
+			<key>timeStartedRecording</key>
+			<real>760826120.37444401</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Reminder Roast</string>
+			<key>uniqueIdentifier</key>
+			<string>B4DB7B9D-72CF-42E6-BBFB-EC1DB8086A8F</string>
 		</dict>
 		<key>B57520CB-1E30-467B-9E96-4DC8C0D97284</key>
 		<dict>
