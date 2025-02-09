@@ -7,7 +7,7 @@
         "key": "Color",
         "location": {
           "startingColumn": 30,
-          "startingLine": 62
+          "startingLine": 64
         }
       },
       {
@@ -15,7 +15,7 @@
         "key": "Icon",
         "location": {
           "startingColumn": 30,
-          "startingLine": 90
+          "startingLine": 92
         }
       },
       {
@@ -23,7 +23,7 @@
         "key": "Cancel",
         "location": {
           "startingColumn": 33,
-          "startingLine": 164
+          "startingLine": 163
         }
       },
       {
@@ -31,7 +31,7 @@
         "key": "Save",
         "location": {
           "startingColumn": 34,
-          "startingLine": 165
+          "startingLine": 164
         }
       },
       {
@@ -39,7 +39,7 @@
         "key": "List Name",
         "location": {
           "startingColumn": 31,
-          "startingLine": 150
+          "startingLine": 151
         }
       }
     ]

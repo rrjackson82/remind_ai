@@ -1,3 +1,0 @@
-Target dependency graph (2 targets)
-Target 'Reminder Roast' in project 'Reminder Roast' (no dependencies)
-Target 'Reminder Roast' in project 'Reminder Roast' (no dependencies)

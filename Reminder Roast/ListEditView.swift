@@ -8,22 +8,24 @@ struct ColorButton: View {
     let action: () -> Void
     
     @State private var pressed = false  // Local state to track button press
+    @State private var scaleEffect: CGFloat = 1.0  // For scaling effect
     
     var body: some View {
         Button(action: {
             action() // Call the action passed in from the parent
             pressed = true  // Mark as pressed
-            print("Tapped on color: \(colorName)")  // Debugging log
+//            print("Tapped on color: \(colorName) - FROM LIST EDIT VIEW LINE 16")  // Debugging log
         }) {
             Circle()
                 .fill(colorValue)
                 .frame(width: 30, height: 30)
                 .overlay(
                     Circle()
-                        .strokeBorder(isSelected ? .gray : .clear, lineWidth: 2)
+                        .strokeBorder(isSelected ? Color.white : Color.clear, lineWidth: 3)
                 )
+                .scaleEffect(scaleEffect)  // Apply the scale effect
                 .shadow(radius: isSelected ? 3 : 1)
-                .scaleEffect(pressed ? 1.1 : 1.0)  // Add a scaling effect on press
+                .animation(.easeInOut(duration: 0.2), value: scaleEffect)
         }
         .buttonStyle(PlainButtonStyle()) // Disable default button style to prevent layout issues
     }
@@ -69,7 +71,7 @@ struct ColorPickerSection: View {
                         action: {
                             if selectedColor != colorName {
                                 selectedColor = colorName.lowercased()
-                                print("Selected color changed to: \(selectedColor)")
+//                                print("Selected color changed to: \(selectedColor) LIST EDIT VIEW LINE 72")
                             }
                         }
                     )
@@ -118,10 +120,10 @@ struct ListEditView: View {
     let title: String
     @Binding var name: String
     @Binding var icon: String
-    @Binding var color: String  // Correctly bind to color state
+    @Binding var color: String
     let onSave: () -> Void
     let onCancel: () -> Void
-    
+
     let availableColors = [
         ("Blue", Color.blue),
         ("Red", Color.red),
@@ -132,16 +134,15 @@ struct ListEditView: View {
     ]
     
     let commonIcons = [
-                "list.bullet", "checklist", "doc.text", "folder",
-                "calendar", "clock", "bell", "flag",
-                "graduationcap", "book.closed", "pencil", "backpack",
-                "ruler", "books.vertical", "highlighter",
-                "house", "cart", "gift", "heart",
-                "star", "person", "carrot", "cart.fill",
-                "fork.knife", "bed.double", "washer", "leaf",
-                "gear", "bookmark", "tag", "folder.badge.plus"
-            ]
-
+       "list.bullet", "checklist", "doc.text", "folder",
+       "calendar", "clock", "bell", "flag",
+       "graduationcap", "book.closed", "pencil", "backpack",
+       "ruler", "books.vertical", "highlighter",
+       "house", "cart", "gift", "heart",
+       "star", "person", "carrot", "cart.fill",
+       "fork.knife", "bed.double", "washer", "leaf",
+       "gear", "bookmark", "tag", "folder.badge.plus"
+   ]
     
     var body: some View {
         NavigationView {
@@ -149,13 +150,11 @@ struct ListEditView: View {
                 Section {
                     TextField("List Name", text: $name)
                 }
-                
-                // Pass selectedColor as a binding
+
                 ColorPickerSection(
-                    selectedColor: $color,  // Properly bind to color state
+                    selectedColor: $color,  // Correctly bind selected color here
                     availableColors: availableColors
                 )
-                
                 // 🔹 Icon Picker Section (RESTORED ✅)
                    IconPickerSection(selectedIcon: $icon, commonIcons: commonIcons)
             }
