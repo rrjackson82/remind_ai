@@ -16,6 +16,7 @@ struct Reminder_RoastApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .preferredColorScheme(.dark)
         }
     }
     func requestNotificationPermission() {

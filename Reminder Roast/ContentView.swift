@@ -20,6 +20,3 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-//#Preview {
-//    TaskListView()
-//}
