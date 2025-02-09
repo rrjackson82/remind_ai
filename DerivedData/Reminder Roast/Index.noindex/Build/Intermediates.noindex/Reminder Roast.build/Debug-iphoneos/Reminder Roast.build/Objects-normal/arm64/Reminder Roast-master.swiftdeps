@@ -1,0 +1,22 @@
+version: "Apple Swift version 6.0.3 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)"
+options: "47d5c61e776127d485f329e285c84dcefbb41c79c2c8f8115b018dc36ddd6c26"
+build_start_time: [1739116622, 741391000]
+build_end_time: [1739116623, 330607000]
+inputs:
+  ? "/Users/daneohr/Downloads/Xcode Projects/Reminder Roast/Reminder Roast/DerivedData/Reminder Roast/Index.noindex/Build/Intermediates.noindex/Reminder Roast.build/Debug-iphoneos/Reminder Roast.build/DerivedSources/GeneratedAssetSymbols.swift"
+  : [1739116567, 774404480]
+  "/Users/daneohr/Downloads/Xcode Projects/Reminder Roast/Reminder Roast/Reminder Roast/CalendarView.swift": [1739057859, 528010042]
+  "/Users/daneohr/Downloads/Xcode Projects/Reminder Roast/Reminder Roast/Reminder Roast/CompletedTasksView.swift": [1739058089, 107617306]
+  "/Users/daneohr/Downloads/Xcode Projects/Reminder Roast/Reminder Roast/Reminder Roast/ConfettiView.swift": [1739053461, 220021377]
+  "/Users/daneohr/Downloads/Xcode Projects/Reminder Roast/Reminder Roast/Reminder Roast/ContentView.swift": [1739057032, 575819581]
+  "/Users/daneohr/Downloads/Xcode Projects/Reminder Roast/Reminder Roast/Reminder Roast/HomeView.swift": [1739057989, 8389356]
+  "/Users/daneohr/Downloads/Xcode Projects/Reminder Roast/Reminder Roast/Reminder Roast/ListEditView.swift": [1739055241, 958124008]
+  "/Users/daneohr/Downloads/Xcode Projects/Reminder Roast/Reminder Roast/Reminder Roast/ListSection.swift": [1739058569, 762000238]
+  "/Users/daneohr/Downloads/Xcode Projects/Reminder Roast/Reminder Roast/Reminder Roast/ReminderList.swift": [1739056604, 427593118]
+  "/Users/daneohr/Downloads/Xcode Projects/Reminder Roast/Reminder Roast/Reminder Roast/Reminder_RoastApp.swift": [1739026677, 803514026]
+  "/Users/daneohr/Downloads/Xcode Projects/Reminder Roast/Reminder Roast/Reminder Roast/SpecialListsView.swift": [1739057030, 499482091]
+  "/Users/daneohr/Downloads/Xcode Projects/Reminder Roast/Reminder Roast/Reminder Roast/Task.swift": [1739056622, 91069227]
+  "/Users/daneohr/Downloads/Xcode Projects/Reminder Roast/Reminder Roast/Reminder Roast/TaskEditView.swift": [1739056622, 91187055]
+  "/Users/daneohr/Downloads/Xcode Projects/Reminder Roast/Reminder Roast/Reminder Roast/TaskListView.swift": [1739059573, 268807169]
+  "/Users/daneohr/Downloads/Xcode Projects/Reminder Roast/Reminder Roast/Reminder Roast/TaskManager.swift": [1739058580, 777499813]
+  "/Users/daneohr/Downloads/Xcode Projects/Reminder Roast/Reminder Roast/Reminder Roast/TodayView.swift": [1739056796, 186998186]

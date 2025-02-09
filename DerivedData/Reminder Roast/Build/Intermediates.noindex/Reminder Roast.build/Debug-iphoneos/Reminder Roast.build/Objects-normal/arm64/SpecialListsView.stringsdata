@@ -1,0 +1,16 @@
+{
+  "source": "/Users/daneohr/Downloads/Xcode Projects/Reminder Roast/Reminder Roast/Reminder Roast/SpecialListsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "All Tasks",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 20
+        }
+      }
+    ]
+  },
+  "version": 1
+}

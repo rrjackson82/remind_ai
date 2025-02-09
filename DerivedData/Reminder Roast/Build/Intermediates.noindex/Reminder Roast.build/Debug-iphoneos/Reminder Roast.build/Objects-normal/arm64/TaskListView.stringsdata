@@ -1,0 +1,120 @@
+{
+  "source": "/Users/daneohr/Downloads/Xcode Projects/Reminder Roast/Reminder Roast/Reminder Roast/TaskListView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "New Section",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 58
+        }
+      },
+      {
+        "comment": "",
+        "key": "No tasks yet",
+        "location": {
+          "startingColumn": 14,
+          "startingLine": 83
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Section",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 197
+        }
+      },
+      {
+        "comment": "",
+        "key": "Done",
+        "location": {
+          "startingColumn": 48,
+          "startingLine": 201
+        }
+      },
+      {
+        "comment": "",
+        "key": "Edit",
+        "location": {
+          "startingColumn": 57,
+          "startingLine": 201
+        }
+      },
+      {
+        "comment": "",
+        "key": "Section Name",
+        "location": {
+          "startingColumn": 19,
+          "startingLine": 241
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 242
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 245
+        }
+      },
+      {
+        "comment": "",
+        "key": "Section Name",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 282
+        }
+      },
+      {
+        "comment": "",
+        "key": "Description",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 373
+        }
+      },
+      {
+        "comment": "",
+        "key": "",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 395
+        }
+      },
+      {
+        "comment": "",
+        "key": "Title",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 366
+        }
+      },
+      {
+        "comment": "",
+        "key": "Delete",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 414
+        }
+      },
+      {
+        "comment": "",
+        "key": "Completed (%lld)",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 538
+        }
+      }
+    ]
+  },
+  "version": 1
+}
