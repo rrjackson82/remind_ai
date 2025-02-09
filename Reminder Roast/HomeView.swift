@@ -91,7 +91,7 @@ struct HomeView: View {
                     icon: $selectedIcon,
                     color: $selectedColor,
                     onSave: {
-                        taskManager.createList(name: listName, icon: selectedIcon, color: selectedColor)
+                        taskManager.createList(name: listName, icon: selectedIcon, color: selectedColor.lowercased()) // 🔹 Ensuring lowercase
                         showingNewListSheet = false
                     },
                     onCancel: { showingNewListSheet = false }
@@ -109,7 +109,7 @@ struct HomeView: View {
                                 id: list.id,
                                 name: listName,
                                 icon: selectedIcon,
-                                color: selectedColor,
+                                color: selectedColor.lowercased(), // 🔹 Ensuring lowercase
                                 sections: list.sections
                             )
                             taskManager.updateList(updatedList)
@@ -190,7 +190,7 @@ struct ListRowView: View {
         case "purple": return .purple
         case "orange": return .orange
         case "white": return .white
-        default: return .blue
+        default: return .green
         }
     }
 } 

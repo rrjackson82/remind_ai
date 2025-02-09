@@ -6,24 +6,24 @@
         "comment": "",
         "key": "My Lists",
         "location": {
-          "startingColumn": 72,
-          "startingLine": 80
+          "startingColumn": 30,
+          "startingLine": 74
         }
       },
       {
         "comment": "",
         "key": "Pinned",
         "location": {
-          "startingColumn": 70,
-          "startingLine": 55
+          "startingColumn": 29,
+          "startingLine": 49
         }
       },
       {
         "comment": "",
         "key": "My Lists",
         "location": {
-          "startingColumn": 67,
-          "startingLine": 68
+          "startingColumn": 25,
+          "startingLine": 62
         }
       },
       {
@@ -31,15 +31,15 @@
         "key": "%lld",
         "location": {
           "startingColumn": 34,
-          "startingLine": 26
+          "startingLine": 20
         }
       },
       {
         "comment": "",
         "key": "Today",
         "location": {
-          "startingColumn": 76,
-          "startingLine": 24
+          "startingColumn": 35,
+          "startingLine": 18
         }
       },
       {
@@ -47,15 +47,15 @@
         "key": "%lld",
         "location": {
           "startingColumn": 34,
-          "startingLine": 35
+          "startingLine": 29
         }
       },
       {
         "comment": "",
         "key": "All Tasks",
         "location": {
-          "startingColumn": 76,
-          "startingLine": 33
+          "startingColumn": 35,
+          "startingLine": 27
         }
       },
       {
@@ -63,23 +63,23 @@
         "key": "%lld",
         "location": {
           "startingColumn": 34,
-          "startingLine": 44
+          "startingLine": 38
         }
       },
       {
         "comment": "",
         "key": "Completed",
         "location": {
-          "startingColumn": 76,
-          "startingLine": 42
+          "startingColumn": 35,
+          "startingLine": 36
         }
       },
       {
         "comment": "",
         "key": "Calendar",
         "location": {
-          "startingColumn": 72,
-          "startingLine": 50
+          "startingColumn": 31,
+          "startingLine": 44
         }
       },
       {
@@ -87,39 +87,39 @@
         "key": "%lld",
         "location": {
           "startingColumn": 22,
-          "startingLine": 164
+          "startingLine": 158
         }
       },
       {
         "comment": "",
         "key": "Delete",
         "location": {
-          "startingColumn": 65,
-          "startingLine": 172
+          "startingColumn": 23,
+          "startingLine": 166
         }
       },
       {
         "comment": "",
         "key": "Edit",
         "location": {
-          "startingColumn": 65,
-          "startingLine": 176
+          "startingColumn": 23,
+          "startingLine": 170
         }
       },
       {
         "comment": "",
         "key": "Unpin",
         "location": {
-          "startingColumn": 81,
-          "startingLine": 184
+          "startingColumn": 39,
+          "startingLine": 178
         }
       },
       {
         "comment": "",
         "key": "Pin",
         "location": {
-          "startingColumn": 134,
-          "startingLine": 184
+          "startingColumn": 49,
+          "startingLine": 178
         }
       }
     ]

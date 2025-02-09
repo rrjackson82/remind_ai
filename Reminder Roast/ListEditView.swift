@@ -1,13 +1,20 @@
 import SwiftUI
 
+// 🔹 ColorButton View (Displays a color option)
 struct ColorButton: View {
     let colorName: String
     let colorValue: Color
     let isSelected: Bool
     let action: () -> Void
     
+    @State private var pressed = false  // Local state to track button press
+    
     var body: some View {
-        Button(action: action) {
+        Button(action: {
+            action() // Call the action passed in from the parent
+            pressed = true  // Mark as pressed
+            print("Tapped on color: \(colorName)")  // Debugging log
+        }) {
             Circle()
                 .fill(colorValue)
                 .frame(width: 30, height: 30)
@@ -16,10 +23,13 @@ struct ColorButton: View {
                         .strokeBorder(isSelected ? .gray : .clear, lineWidth: 2)
                 )
                 .shadow(radius: isSelected ? 3 : 1)
+                .scaleEffect(pressed ? 1.1 : 1.0)  // Add a scaling effect on press
         }
+        .buttonStyle(PlainButtonStyle()) // Disable default button style to prevent layout issues
     }
 }
 
+// 🔹 IconButton View (Displays an icon option)
 struct IconButton: View {
     let iconName: String
     let isSelected: Bool
@@ -42,9 +52,11 @@ struct IconButton: View {
     }
 }
 
+// 🔹 Color Picker Section (Handles color selection)
 struct ColorPickerSection: View {
     @Binding var selectedColor: String
-    let availableColors: [(String, Color)]
+    let availableColors: [(String, Color)]  // List of available colors
+    @Environment(\.colorScheme) var colorScheme  // Get the current color scheme
     
     var body: some View {
         Section(header: Text("Color")) {
@@ -52,9 +64,14 @@ struct ColorPickerSection: View {
                 ForEach(availableColors, id: \.0) { colorName, colorValue in
                     ColorButton(
                         colorName: colorName,
-                        colorValue: colorValue,
-                        isSelected: selectedColor.lowercased() == colorName.lowercased(),
-                        action: { selectedColor = colorName }
+                        colorValue: colorName == "White" ? (colorScheme == .dark ? Color.white : Color.black) : colorValue, 
+                        isSelected: selectedColor == colorName,
+                        action: {
+                            if selectedColor != colorName {
+                                selectedColor = colorName.lowercased()
+                                print("Selected color changed to: \(selectedColor)")
+                            }
+                        }
                     )
                 }
             }
@@ -63,6 +80,7 @@ struct ColorPickerSection: View {
     }
 }
 
+// 🔹 Icon Picker Section (Handles icon selection)
 struct IconPickerSection: View {
     @Binding var selectedIcon: String
     let commonIcons: [String]
@@ -95,11 +113,12 @@ struct IconPickerSection: View {
     }
 }
 
+// 🔹 List Edit View (Main View with Color and Icon Selection)
 struct ListEditView: View {
     let title: String
     @Binding var name: String
     @Binding var icon: String
-    @Binding var color: String
+    @Binding var color: String  // Correctly bind to color state
     let onSave: () -> Void
     let onCancel: () -> Void
     
@@ -113,15 +132,16 @@ struct ListEditView: View {
     ]
     
     let commonIcons = [
-        "list.bullet", "checklist", "doc.text", "folder",
-        "calendar", "clock", "bell", "flag",
-        "graduationcap", "book.closed", "pencil", "backpack",
-        "ruler", "books.vertical", "highlighter",
-        "house", "cart", "gift", "heart",
-        "star", "person", "carrot", "cart.fill",
-        "fork.knife", "bed.double", "washer", "leaf",
-        "gear", "bookmark", "tag", "folder.badge.plus"
-    ]
+                "list.bullet", "checklist", "doc.text", "folder",
+                "calendar", "clock", "bell", "flag",
+                "graduationcap", "book.closed", "pencil", "backpack",
+                "ruler", "books.vertical", "highlighter",
+                "house", "cart", "gift", "heart",
+                "star", "person", "carrot", "cart.fill",
+                "fork.knife", "bed.double", "washer", "leaf",
+                "gear", "bookmark", "tag", "folder.badge.plus"
+            ]
+
     
     var body: some View {
         NavigationView {
@@ -130,8 +150,14 @@ struct ListEditView: View {
                     TextField("List Name", text: $name)
                 }
                 
-                ColorPickerSection(selectedColor: $color, availableColors: availableColors)
-                IconPickerSection(selectedIcon: $icon, commonIcons: commonIcons)
+                // Pass selectedColor as a binding
+                ColorPickerSection(
+                    selectedColor: $color,  // Properly bind to color state
+                    availableColors: availableColors
+                )
+                
+                // 🔹 Icon Picker Section (RESTORED ✅)
+                   IconPickerSection(selectedIcon: $icon, commonIcons: commonIcons)
             }
             .navigationTitle(title)
             .navigationBarItems(
@@ -140,5 +166,23 @@ struct ListEditView: View {
                     .disabled(name.isEmpty)
             )
         }
+    }
+}
+
+// 🔹 Example Preview
+struct ListEditView_Previews: PreviewProvider {
+    static var previews: some View {
+        @State var name = "My List"
+        @State var icon = "list.bullet"
+        @State var color = "blue"  // Default color
+        
+        return ListEditView(
+            title: "Edit List",
+            name: $name,
+            icon: $icon,
+            color: $color,
+            onSave: { print("Saved") },
+            onCancel: { print("Canceled") }
+        )
     }
 }

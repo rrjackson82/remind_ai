@@ -17,16 +17,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        __designTimeSelection(VStack {
-            __designTimeSelection(Image(systemName: __designTimeString("#2610_0", fallback: "globe"))
-                .imageScale(.large)
-                .foregroundStyle(.tint), "#2610.[1].[0].property.[0].[0].arg[0].value.[0]")
-            __designTimeSelection(Text(__designTimeString("#2610_1", fallback: "Hello, world!")), "#2610.[1].[0].property.[0].[0].arg[0].value.[1]")
-        }
-        .padding(), "#2610.[1].[0].property.[0].[0]")
+        __designTimeSelection(HomeView(), "#4140.[1].[0].property.[0].[0]")
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        __designTimeSelection(ContentView(), "#4140.[2].[0].property.[0].[0]")
+        
+    }
 }
+
+//#Preview {
+//    TaskListView()
+//}
