@@ -1,0 +1,23 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "09F77B534C5747A1DDFF0834D02DF2054AB82CC9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "09F77B534C5747A1DDFF0834D02DF2054AB82CC9" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "57012B05-0353-42F1-ACBC-B1D2A6A12048",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "09F77B534C5747A1DDFF0834D02DF2054AB82CC9" : "Reminder%20Roast\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Reminder Roast",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Reminder Roast.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/rrjackson82\/remind_ai.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "09F77B534C5747A1DDFF0834D02DF2054AB82CC9"
+    }
+  ]
+}

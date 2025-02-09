@@ -6,16 +6,16 @@
         "comment": "",
         "key": "Today",
         "location": {
-          "startingColumn": 67,
-          "startingLine": 22
+          "startingColumn": 26,
+          "startingLine": 16
         }
       },
       {
         "comment": "",
         "key": "No tasks due today",
         "location": {
-          "startingColumn": 63,
-          "startingLine": 25
+          "startingColumn": 22,
+          "startingLine": 19
         }
       }
     ]

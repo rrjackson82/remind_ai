@@ -29,4 +29,9 @@ class NotificationManager {
             }
         }
     }
+    // New function to cancel a notification
+    func cancelNotification(for taskId: UUID) {
+        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [taskId.uuidString])
+        print("Notification canceled for task: \(taskId)")
+    }
 }

@@ -1,16 +1,5 @@
 {
   "source": "/Users/daneohr/Downloads/Xcode Projects/Reminder Roast/Reminder Roast/Reminder Roast/ContentView.swift",
-  "tables": {
-    "Localizable": [
-      {
-        "comment": "",
-        "key": "Schedule Reminder",
-        "location": {
-          "startingColumn": 16,
-          "startingLine": 13
-        }
-      }
-    ]
-  },
+  "tables": {},
   "version": 1
 }
