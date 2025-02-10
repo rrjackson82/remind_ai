@@ -1,0 +1,13 @@
+Target dependency graph (8 targets)
+Target 'Reminder RoastUITests' in project 'Reminder Roast' (no dependencies)
+Target 'Reminder RoastUITests' in project 'Reminder Roast'
+➜ Explicit dependency on target 'Reminder Roast' in project 'Reminder Roast'
+Target 'Reminder RoastUITests' in project 'Reminder Roast'
+➜ Explicit dependency on target 'Reminder Roast' in project 'Reminder Roast'
+Target 'Reminder RoastTests' in project 'Reminder Roast' (no dependencies)
+Target 'Reminder RoastTests' in project 'Reminder Roast'
+➜ Explicit dependency on target 'Reminder Roast' in project 'Reminder Roast'
+Target 'Reminder RoastTests' in project 'Reminder Roast'
+➜ Explicit dependency on target 'Reminder Roast' in project 'Reminder Roast'
+Target 'Reminder Roast' in project 'Reminder Roast' (no dependencies)
+Target 'Reminder Roast' in project 'Reminder Roast' (no dependencies)
