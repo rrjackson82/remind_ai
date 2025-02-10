@@ -6,72 +6,72 @@
         "comment": "",
         "key": "My Lists",
         "location": {
-          "startingColumn": 30,
-          "startingLine": 62
+          "startingColumn": 34,
+          "startingLine": 64
         }
       },
       {
         "comment": "",
         "key": "My Lists",
         "location": {
-          "startingColumn": 25,
-          "startingLine": 50
+          "startingColumn": 29,
+          "startingLine": 52
         }
       },
       {
         "comment": "",
         "key": "%lld",
         "location": {
-          "startingColumn": 34,
-          "startingLine": 22
+          "startingColumn": 38,
+          "startingLine": 24
         }
       },
       {
         "comment": "",
         "key": "Today",
         "location": {
-          "startingColumn": 35,
-          "startingLine": 20
+          "startingColumn": 39,
+          "startingLine": 22
         }
       },
       {
         "comment": "",
         "key": "%lld",
         "location": {
-          "startingColumn": 34,
-          "startingLine": 31
+          "startingColumn": 38,
+          "startingLine": 33
         }
       },
       {
         "comment": "",
         "key": "All Tasks",
         "location": {
-          "startingColumn": 35,
-          "startingLine": 29
+          "startingColumn": 39,
+          "startingLine": 31
         }
       },
       {
         "comment": "",
         "key": "%lld",
         "location": {
-          "startingColumn": 34,
-          "startingLine": 40
+          "startingColumn": 38,
+          "startingLine": 42
         }
       },
       {
         "comment": "",
         "key": "Completed",
         "location": {
-          "startingColumn": 35,
-          "startingLine": 38
+          "startingColumn": 39,
+          "startingLine": 40
         }
       },
       {
         "comment": "",
         "key": "Calendar",
         "location": {
-          "startingColumn": 31,
-          "startingLine": 46
+          "startingColumn": 35,
+          "startingLine": 48
         }
       }
     ]

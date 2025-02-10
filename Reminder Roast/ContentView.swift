@@ -10,11 +10,20 @@ import SwiftUI
 struct ContentView: View {
     @State private var isOnboardingComplete = UserDefaults.standard.bool(forKey: "hasCompletedOnboarding")
     var body: some View {
-        if isOnboardingComplete{
-            HomeView()
-        } else {
-            OnboardingView()
-        }
+        NavigationView{
+            VStack{
+                if isOnboardingComplete{
+                    HomeView()
+                } else {
+                    OnboardingView()
+                }
+            }
+        } .navigationBarItems(trailing: NavigationLink(destination: SettingsView()){
+            Image(systemName: "gearshape.fill")
+                .font(.title)
+                .padding()
+        })
+        
     }
 }
 

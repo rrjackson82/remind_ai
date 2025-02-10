@@ -1,0 +1,56 @@
+{
+  "source": "/Users/daneohr/Downloads/Xcode Projects/Reminder Roast/Reminder Roast/Reminder Roast/SettingsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Settings",
+        "location": {
+          "startingColumn": 71,
+          "startingLine": 39
+        }
+      },
+      {
+        "comment": "",
+        "key": "Notifications",
+        "location": {
+          "startingColumn": 79,
+          "startingLine": 22
+        }
+      },
+      {
+        "comment": "",
+        "key": "Encouraging 😊",
+        "location": {
+          "startingColumn": 73,
+          "startingLine": 24
+        }
+      },
+      {
+        "comment": "",
+        "key": "Neutral ✨",
+        "location": {
+          "startingColumn": 73,
+          "startingLine": 25
+        }
+      },
+      {
+        "comment": "",
+        "key": "Roast Me 🔥",
+        "location": {
+          "startingColumn": 73,
+          "startingLine": 26
+        }
+      },
+      {
+        "comment": "",
+        "key": "Type",
+        "location": {
+          "startingColumn": 75,
+          "startingLine": 29
+        }
+      }
+    ]
+  },
+  "version": 1
+}

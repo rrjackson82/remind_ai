@@ -13,190 +13,142 @@ struct HomeView: View {
     @State private var editingList: ReminderList?
     @State private var listName = ""
     @State private var selectedIcon = "list.bullet"
-    @State private var selectedColor = "blue"
+    @State private var selectedColor = "blue" // Default color
+    @State private var showingSettings = false // State for settings view
     
+    @Environment(\.colorScheme) var colorScheme // Get the current color scheme (light/dark mode)
+
     var body: some View {
         NavigationView {
-            List {
-                Section {
-                    NavigationLink(destination: TodayView(taskManager: taskManager)) {
-                        HStack {
-                            Label(__designTimeString("#10424_0", fallback: "Today"), systemImage: __designTimeString("#10424_1", fallback: "sun.max"))
-                            Spacer()
-                            Text("\(taskManager.todayTasks.count)")
-                                .foregroundColor(.gray)
+            ZStack(alignment: .bottomTrailing) { // Aligns elements to the bottom right
+                List {
+                    Section {
+                        NavigationLink(destination: TodayView(taskManager: taskManager)) {
+                            HStack {
+                                Label(__designTimeString("#7133_0", fallback: "Today"), systemImage: __designTimeString("#7133_1", fallback: "sun.max"))
+                                Spacer()
+                                Text("\(taskManager.todayTasks.count)")
+                                    .foregroundColor(.gray)
+                            }
+                        }
+
+                        NavigationLink(destination: AllTasksView(taskManager: taskManager)) {
+                            HStack {
+                                Label(__designTimeString("#7133_2", fallback: "All Tasks"), systemImage: __designTimeString("#7133_3", fallback: "tray.full"))
+                                Spacer()
+                                Text("\(taskManager.allTasks.count)")
+                                    .foregroundColor(.gray)
+                            }
+                        }
+
+                        NavigationLink(destination: CompletedTasksView(taskManager: taskManager)) {
+                            HStack {
+                                Label(__designTimeString("#7133_4", fallback: "Completed"), systemImage: __designTimeString("#7133_5", fallback: "checkmark.circle"))
+                                Spacer()
+                                Text("\(taskManager.allCompletedTasks.count)")
+                                    .foregroundColor(.gray)
+                            }
+                        }
+
+                        NavigationLink(destination: CalendarView(taskManager: taskManager)) {
+                            Label(__designTimeString("#7133_6", fallback: "Calendar"), systemImage: __designTimeString("#7133_7", fallback: "calendar"))
                         }
                     }
-                    
-                    NavigationLink(destination: AllTasksView(taskManager: taskManager)) {
-                        HStack {
-                            Label(__designTimeString("#10424_2", fallback: "All Tasks"), systemImage: __designTimeString("#10424_3", fallback: "tray.full"))
-                            Spacer()
-                            Text("\(taskManager.allTasks.count)")
-                                .foregroundColor(.gray)
-                        }
-                    }
-                    
-                    NavigationLink(destination: CompletedTasksView(taskManager: taskManager)) {
-                        HStack {
-                            Label(__designTimeString("#10424_4", fallback: "Completed"), systemImage: __designTimeString("#10424_5", fallback: "checkmark.circle"))
-                            Spacer()
-                            Text("\(taskManager.allCompletedTasks.count)")
-                                .foregroundColor(.gray)
-                        }
-                    }
-                    
-                    NavigationLink(destination: CalendarView(taskManager: taskManager)) {
-                        Label(__designTimeString("#10424_6", fallback: "Calendar"), systemImage: __designTimeString("#10424_7", fallback: "calendar"))
-                    }
-                }
-                
-                if !pinnedLists.isEmpty {
-                    Section(__designTimeString("#10424_8", fallback: "Pinned")) {
-                        ForEach(pinnedLists) { list in
+
+                    Section(__designTimeString("#7133_8", fallback: "My Lists")) {
+                        ForEach(taskManager.lists) { list in
                             ListRowView(list: list, taskManager: taskManager) {
                                 editingList = list
                                 listName = list.name
                                 selectedIcon = list.icon
-                                selectedColor = list.color
-                                showingEditSheet = __designTimeBoolean("#10424_9", fallback: true)
+                                selectedColor = list.color // Update color when editing
+                                showingEditSheet = __designTimeBoolean("#7133_9", fallback: true)
                             }
                         }
                     }
                 }
-                
-                Section(__designTimeString("#10424_10", fallback: "My Lists")) {
-                    ForEach(unpinnedLists) { list in
-                        ListRowView(list: list, taskManager: taskManager) {
-                            editingList = list
-                            listName = list.name
-                            selectedIcon = list.icon
-                            selectedColor = list.color
-                            showingEditSheet = __designTimeBoolean("#10424_11", fallback: true)
+                .navigationTitle(__designTimeString("#7133_10", fallback: "My Lists"))
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button(action: {
+                            listName = __designTimeString("#7133_11", fallback: "")
+                            selectedIcon = __designTimeString("#7133_12", fallback: "list.bullet")
+                            selectedColor = colorScheme == .dark ? __designTimeString("#7133_13", fallback: "white") : __designTimeString("#7133_14", fallback: "black") // Set default color based on theme
+                            showingNewListSheet = __designTimeBoolean("#7133_15", fallback: true)
+                        }) {
+                            Image(systemName: __designTimeString("#7133_16", fallback: "plus"))
                         }
                     }
                 }
-            }
-            .navigationTitle(__designTimeString("#10424_12", fallback: "My Lists"))
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {
-                        listName = __designTimeString("#10424_13", fallback: "")
-                        selectedIcon = __designTimeString("#10424_14", fallback: "list.bullet")
-                        selectedColor = __designTimeString("#10424_15", fallback: "blue")
-                        showingNewListSheet = __designTimeBoolean("#10424_16", fallback: true)
-                    }) {
-                        Image(systemName: __designTimeString("#10424_17", fallback: "plus"))
-                    }
-                }
-            }
-            .sheet(isPresented: $showingNewListSheet) {
-                ListEditView(
-                    title: __designTimeString("#10424_18", fallback: "New List"),
-                    name: $listName,
-                    icon: $selectedIcon,
-                    color: $selectedColor,
-                    onSave: {
-                        taskManager.createList(name: listName, icon: selectedIcon, color: selectedColor)
-                        showingNewListSheet = __designTimeBoolean("#10424_19", fallback: false)
-                    },
-                    onCancel: { showingNewListSheet = __designTimeBoolean("#10424_20", fallback: false) }
-                )
-            }
-            .sheet(isPresented: $showingEditSheet) {
-                if let list = editingList {
+                .sheet(isPresented: $showingNewListSheet) {
                     ListEditView(
-                        title: __designTimeString("#10424_21", fallback: "Edit List"),
+                        title: __designTimeString("#7133_17", fallback: "New List"),
                         name: $listName,
                         icon: $selectedIcon,
                         color: $selectedColor,
                         onSave: {
-                            let updatedList = ReminderList(
-                                id: list.id,
-                                name: listName,
-                                icon: selectedIcon,
-                                color: selectedColor,
-                                sections: list.sections
-                            )
-                            taskManager.updateList(updatedList)
-                            showingEditSheet = __designTimeBoolean("#10424_22", fallback: false)
+                            taskManager.createList(name: listName, icon: selectedIcon, color: selectedColor)
+                            showingNewListSheet = __designTimeBoolean("#7133_18", fallback: false)
                         },
-                        onCancel: { showingEditSheet = __designTimeBoolean("#10424_23", fallback: false) }
+                        onCancel: { showingNewListSheet = __designTimeBoolean("#7133_19", fallback: false) }
                     )
                 }
-            }
-            .onChange(of: showingEditSheet) { oldValue, newValue in
-                if !newValue {
-                    editingList = nil
+                .sheet(isPresented: $showingEditSheet) {
+                    if let list = editingList {
+                        ListEditView(
+                            title: __designTimeString("#7133_20", fallback: "Edit List"),
+                            name: $listName,
+                            icon: $selectedIcon,
+                            color: $selectedColor,
+                            onSave: {
+                                let updatedList = ReminderList(
+                                    id: list.id,
+                                    name: listName,
+                                    icon: selectedIcon,
+                                    color: selectedColor,
+                                    sections: list.sections
+                                )
+                                taskManager.updateList(updatedList)
+                                showingEditSheet = __designTimeBoolean("#7133_21", fallback: false)
+                            },
+                            onCancel: { showingEditSheet = __designTimeBoolean("#7133_22", fallback: false) }
+                        )
+                    }
+                }
+                .onChange(of: showingEditSheet) { oldValue, newValue in
+                    if !newValue {
+                        editingList = nil
+                    }
+                }
+
+                // Settings Button at Bottom Right
+                VStack {
+                    Spacer() // Pushes the button to the bottom
+                    HStack {
+                        Spacer() // Pushes the button to the right
+                        Button(action: {
+                            showingSettings = __designTimeBoolean("#7133_23", fallback: true)
+                        }) {
+                            Image(systemName: __designTimeString("#7133_24", fallback: "gear"))
+                                .font(.title)
+                                .padding()
+                        }
+                        .padding(.trailing, __designTimeInteger("#7133_25", fallback: 20))
+                        .padding(.bottom, __designTimeInteger("#7133_26", fallback: 20))
+                    }
                 }
             }
         }
+        .sheet(isPresented: $showingSettings) {
+            SettingsView()
+        }
     }
-    
+
     private var pinnedLists: [ReminderList] {
         taskManager.lists.filter { $0.isPinned }
     }
-    
+
     private var unpinnedLists: [ReminderList] {
         taskManager.lists.filter { !$0.isPinned }
     }
 }
-
-struct ListRowView: View {
-    let list: ReminderList
-    let taskManager: TaskManager
-    let onEdit: () -> Void
-    
-    var incompleteTaskCount: Int {
-        list.sections.reduce(__designTimeInteger("#10424_24", fallback: 0)) { count, section in
-            count + taskManager.incompleteTasks(in: section.id, listId: list.id).count
-        }
-    }
-    
-    var body: some View {
-        NavigationLink(destination: TaskListView(taskManager: taskManager, list: list)) {
-            HStack {
-                Image(systemName: list.icon)
-                    .foregroundColor(colorFromString(list.color))
-                    .font(.system(size: __designTimeInteger("#10424_25", fallback: 20)))
-                Text(list.name)
-                Spacer()
-                Text("\(incompleteTaskCount)")
-                    .foregroundColor(.gray)
-            }
-        }
-        .swipeActions(edge: .trailing) {
-            Button(role: .destructive) {
-                taskManager.deleteList(list.id)
-            } label: {
-                Label(__designTimeString("#10424_26", fallback: "Delete"), systemImage: __designTimeString("#10424_27", fallback: "trash"))
-            }
-            
-            Button(action: onEdit) {
-                Label(__designTimeString("#10424_28", fallback: "Edit"), systemImage: __designTimeString("#10424_29", fallback: "pencil"))
-            }
-            .tint(.blue)
-        }
-        .swipeActions(edge: .leading) {
-            Button {
-                taskManager.togglePinList(list.id)
-            } label: {
-                Label(list.isPinned ? __designTimeString("#10424_30", fallback: "Unpin") : __designTimeString("#10424_31", fallback: "Pin"), 
-                      systemImage: list.isPinned ? __designTimeString("#10424_32", fallback: "pin.slash") : __designTimeString("#10424_33", fallback: "pin"))
-            }
-            .tint(.orange)
-        }
-    }
-    
-    private func colorFromString(_ colorString: String) -> Color {
-        switch colorString.lowercased() {
-        case "blue": return .blue
-        case "red": return .red
-        case "green": return .green
-        case "purple": return .purple
-        case "orange": return .orange
-        case "white": return .white
-        default: return .blue
-        }
-    }
-} 

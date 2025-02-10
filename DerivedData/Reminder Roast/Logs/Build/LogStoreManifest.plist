@@ -174,6 +174,48 @@
 			<key>uniqueIdentifier</key>
 			<string>0652A4EC-C728-4479-B9D9-DC99620C1E6B</string>
 		</dict>
+		<key>0B2D2FB0-BCFB-40AC-95E1-235E30FB0FF4</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0B2D2FB0-BCFB-40AC-95E1-235E30FB0FF4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>3</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reminder Roast project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reminder Roast</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build (Automatic) Reminder Roast</string>
+			<key>timeStartedRecording</key>
+			<real>760841419.49133801</real>
+			<key>timeStoppedRecording</key>
+			<real>760841420.69539106</real>
+			<key>title</key>
+			<string>Build (Automatic) Reminder Roast</string>
+			<key>uniqueIdentifier</key>
+			<string>0B2D2FB0-BCFB-40AC-95E1-235E30FB0FF4</string>
+		</dict>
 		<key>0B759B1A-0D47-40A7-A545-4865CD07230E</key>
 		<dict>
 			<key>className</key>
@@ -425,6 +467,48 @@
 			<string>Build Reminder Roast</string>
 			<key>uniqueIdentifier</key>
 			<string>161BF4D9-E8C1-45F3-8B3E-5D54BC648754</string>
+		</dict>
+		<key>1713AA4F-6242-42BA-98B9-2655589CB878</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>1713AA4F-6242-42BA-98B9-2655589CB878.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>1</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>2</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reminder Roast project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reminder Roast</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build (Automatic) Reminder Roast</string>
+			<key>timeStartedRecording</key>
+			<real>760841191.86359203</real>
+			<key>timeStoppedRecording</key>
+			<real>760841194.64087796</real>
+			<key>title</key>
+			<string>Build (Automatic) Reminder Roast</string>
+			<key>uniqueIdentifier</key>
+			<string>1713AA4F-6242-42BA-98B9-2655589CB878</string>
 		</dict>
 		<key>18C45341-56A4-42ED-8346-1AD8A5BE97A7</key>
 		<dict>
@@ -719,6 +803,90 @@
 			<string>Build Reminder Roast</string>
 			<key>uniqueIdentifier</key>
 			<string>21D0B7FC-6825-44AC-9B53-C63EE1B3945F</string>
+		</dict>
+		<key>21DC6D6F-5F9C-4B4A-8823-161F782B5673</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>21DC6D6F-5F9C-4B4A-8823-161F782B5673.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reminder Roast project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reminder Roast</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Reminder Roast</string>
+			<key>timeStartedRecording</key>
+			<real>760840351.62974501</real>
+			<key>timeStoppedRecording</key>
+			<real>760840353.459589</real>
+			<key>title</key>
+			<string>Build Reminder Roast</string>
+			<key>uniqueIdentifier</key>
+			<string>21DC6D6F-5F9C-4B4A-8823-161F782B5673</string>
+		</dict>
+		<key>21E39845-0B6F-4575-95F2-09EEDD514504</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>21E39845-0B6F-4575-95F2-09EEDD514504.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>3</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reminder Roast project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reminder Roast</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build (Automatic) Reminder Roast</string>
+			<key>timeStartedRecording</key>
+			<real>760841219.72281396</real>
+			<key>timeStoppedRecording</key>
+			<real>760841221.95416796</real>
+			<key>title</key>
+			<string>Build (Automatic) Reminder Roast</string>
+			<key>uniqueIdentifier</key>
+			<string>21E39845-0B6F-4575-95F2-09EEDD514504</string>
 		</dict>
 		<key>22D9B275-0724-4200-8E23-A0064C17E0A2</key>
 		<dict>
@@ -1056,6 +1224,48 @@
 			<key>uniqueIdentifier</key>
 			<string>2DA52E87-03CD-436C-A1A7-F85E3122DB14</string>
 		</dict>
+		<key>2E339A22-C75C-4C7E-A12A-C8A5AE953D01</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>2E339A22-C75C-4C7E-A12A-C8A5AE953D01.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reminder Roast project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reminder Roast</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Reminder Roast</string>
+			<key>timeStartedRecording</key>
+			<real>760840699.009498</real>
+			<key>timeStoppedRecording</key>
+			<real>760840699.09050405</real>
+			<key>title</key>
+			<string>Build Reminder Roast</string>
+			<key>uniqueIdentifier</key>
+			<string>2E339A22-C75C-4C7E-A12A-C8A5AE953D01</string>
+		</dict>
 		<key>326CD1FE-52B7-40F1-9D2C-5DF3948A3833</key>
 		<dict>
 			<key>className</key>
@@ -1139,6 +1349,48 @@
 			<string>Build Reminder Roast</string>
 			<key>uniqueIdentifier</key>
 			<string>364FEDC8-0E04-42EF-91CF-9116318B8FC1</string>
+		</dict>
+		<key>374B0E44-BE2E-4404-A433-E87012FE1D18</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>374B0E44-BE2E-4404-A433-E87012FE1D18.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>3</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reminder Roast project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reminder Roast</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build (Automatic) Reminder Roast</string>
+			<key>timeStartedRecording</key>
+			<real>760841413.721766</real>
+			<key>timeStoppedRecording</key>
+			<real>760841415.45376396</real>
+			<key>title</key>
+			<string>Build (Automatic) Reminder Roast</string>
+			<key>uniqueIdentifier</key>
+			<string>374B0E44-BE2E-4404-A433-E87012FE1D18</string>
 		</dict>
 		<key>395EE0EB-BAA3-4C28-845F-0ACE7DC7E05C</key>
 		<dict>
@@ -1265,6 +1517,48 @@
 			<string>Build Reminder Roast</string>
 			<key>uniqueIdentifier</key>
 			<string>3D9AC9A4-4969-452D-BAB5-A31D3DA5C932</string>
+		</dict>
+		<key>3DEA19EB-07E7-41D5-AB82-6EB45F90C7D6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3DEA19EB-07E7-41D5-AB82-6EB45F90C7D6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>1</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>2</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reminder Roast project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reminder Roast</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build (Automatic) Reminder Roast</string>
+			<key>timeStartedRecording</key>
+			<real>760841184.33911502</real>
+			<key>timeStoppedRecording</key>
+			<real>760841185.04106605</real>
+			<key>title</key>
+			<string>Build (Automatic) Reminder Roast</string>
+			<key>uniqueIdentifier</key>
+			<string>3DEA19EB-07E7-41D5-AB82-6EB45F90C7D6</string>
 		</dict>
 		<key>415DBD66-B34E-42A9-83E6-B23E548C1533</key>
 		<dict>
@@ -1434,6 +1728,48 @@
 			<key>uniqueIdentifier</key>
 			<string>49670B3E-CB6E-4E00-BDCC-22C46CBECF32</string>
 		</dict>
+		<key>49D6A512-F9E2-40D4-9DAB-F660AF3883FD</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>49D6A512-F9E2-40D4-9DAB-F660AF3883FD.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reminder Roast project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reminder Roast</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Reminder Roast</string>
+			<key>timeStartedRecording</key>
+			<real>760840746.87472296</real>
+			<key>timeStoppedRecording</key>
+			<real>760840748.05415499</real>
+			<key>title</key>
+			<string>Build Reminder Roast</string>
+			<key>uniqueIdentifier</key>
+			<string>49D6A512-F9E2-40D4-9DAB-F660AF3883FD</string>
+		</dict>
 		<key>4A2366B3-3A37-48B7-8489-DED08BE71092</key>
 		<dict>
 			<key>className</key>
@@ -1559,6 +1895,48 @@
 			<string>Build (Automatic) Reminder Roast</string>
 			<key>uniqueIdentifier</key>
 			<string>5021A0DD-2113-4840-8C84-E3AD728C88EB</string>
+		</dict>
+		<key>50425CD3-215A-4FD5-8372-D891FFD1E699</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>50425CD3-215A-4FD5-8372-D891FFD1E699.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>3</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reminder Roast project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reminder Roast</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build (Automatic) Reminder Roast</string>
+			<key>timeStartedRecording</key>
+			<real>760840783.51257503</real>
+			<key>timeStoppedRecording</key>
+			<real>760840786.85170305</real>
+			<key>title</key>
+			<string>Build (Automatic) Reminder Roast</string>
+			<key>uniqueIdentifier</key>
+			<string>50425CD3-215A-4FD5-8372-D891FFD1E699</string>
 		</dict>
 		<key>5120C554-3316-404E-9C9F-B07FFCD2B54B</key>
 		<dict>
@@ -1938,6 +2316,48 @@
 			<key>uniqueIdentifier</key>
 			<string>652C6B6B-6BC1-410B-827E-7EA786288DFC</string>
 		</dict>
+		<key>65EF1648-3B34-49E2-A879-526C49EFC71C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>65EF1648-3B34-49E2-A879-526C49EFC71C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>1</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>2</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reminder Roast project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reminder Roast</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build (Automatic) Reminder Roast</string>
+			<key>timeStartedRecording</key>
+			<real>760841209.77097702</real>
+			<key>timeStoppedRecording</key>
+			<real>760841210.60825002</real>
+			<key>title</key>
+			<string>Build (Automatic) Reminder Roast</string>
+			<key>uniqueIdentifier</key>
+			<string>65EF1648-3B34-49E2-A879-526C49EFC71C</string>
+		</dict>
 		<key>6A4E9DC3-97DF-417A-9EF4-44B8A6F10232</key>
 		<dict>
 			<key>className</key>
@@ -2021,6 +2441,90 @@
 			<string>Build Reminder Roast</string>
 			<key>uniqueIdentifier</key>
 			<string>6D70A458-B4CD-4E72-AB48-1C560D809DBD</string>
+		</dict>
+		<key>6E3325C4-11FA-486D-9D74-45F83496270E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6E3325C4-11FA-486D-9D74-45F83496270E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reminder Roast project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reminder Roast</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Reminder Roast</string>
+			<key>timeStartedRecording</key>
+			<real>760840685.77630603</real>
+			<key>timeStoppedRecording</key>
+			<real>760840687.27601504</real>
+			<key>title</key>
+			<string>Build Reminder Roast</string>
+			<key>uniqueIdentifier</key>
+			<string>6E3325C4-11FA-486D-9D74-45F83496270E</string>
+		</dict>
+		<key>6E3A277E-1407-454C-8999-E81ABE1D8BD1</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6E3A277E-1407-454C-8999-E81ABE1D8BD1.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reminder Roast project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reminder Roast</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Reminder Roast</string>
+			<key>timeStartedRecording</key>
+			<real>760840493.21481597</real>
+			<key>timeStoppedRecording</key>
+			<real>760840494.44815505</real>
+			<key>title</key>
+			<string>Build Reminder Roast</string>
+			<key>uniqueIdentifier</key>
+			<string>6E3A277E-1407-454C-8999-E81ABE1D8BD1</string>
 		</dict>
 		<key>707D3951-45F9-48BD-8DE2-49E6A1F1920F</key>
 		<dict>
@@ -2526,6 +3030,48 @@
 			<key>uniqueIdentifier</key>
 			<string>845A20DC-8BBA-4B6A-B3BC-7AF978FDD2E1</string>
 		</dict>
+		<key>850AFAF6-A6ED-479C-A6E0-B33158BF0810</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>850AFAF6-A6ED-479C-A6E0-B33158BF0810.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>3</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reminder Roast project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reminder Roast</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build (Automatic) Reminder Roast</string>
+			<key>timeStartedRecording</key>
+			<real>760841532.37833095</real>
+			<key>timeStoppedRecording</key>
+			<real>760841534.12013698</real>
+			<key>title</key>
+			<string>Build (Automatic) Reminder Roast</string>
+			<key>uniqueIdentifier</key>
+			<string>850AFAF6-A6ED-479C-A6E0-B33158BF0810</string>
+		</dict>
 		<key>86DA8744-9145-45ED-9EAC-E1FE7CE22DAA</key>
 		<dict>
 			<key>className</key>
@@ -2862,6 +3408,48 @@
 			<key>uniqueIdentifier</key>
 			<string>9085F70D-B069-4964-9756-EA629765BCD2</string>
 		</dict>
+		<key>92C19217-EC78-4F8B-B9AF-4C7A76A364F3</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>92C19217-EC78-4F8B-B9AF-4C7A76A364F3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>3</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reminder Roast project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reminder Roast</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build (Automatic) Reminder Roast</string>
+			<key>timeStartedRecording</key>
+			<real>760841535.32103395</real>
+			<key>timeStoppedRecording</key>
+			<real>760841536.61069095</real>
+			<key>title</key>
+			<string>Build (Automatic) Reminder Roast</string>
+			<key>uniqueIdentifier</key>
+			<string>92C19217-EC78-4F8B-B9AF-4C7A76A364F3</string>
+		</dict>
 		<key>932968A9-5EC1-45A0-9329-A9EE24C24C6D</key>
 		<dict>
 			<key>className</key>
@@ -3029,6 +3617,48 @@
 			<string>Build Reminder Roast</string>
 			<key>uniqueIdentifier</key>
 			<string>9776C6D6-02FF-4B40-84EF-900D33A2AA08</string>
+		</dict>
+		<key>986DB0F0-6947-47B8-8A35-3D0AECB7BC6A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>986DB0F0-6947-47B8-8A35-3D0AECB7BC6A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reminder Roast project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reminder Roast</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Reminder Roast</string>
+			<key>timeStartedRecording</key>
+			<real>760840466.548087</real>
+			<key>timeStoppedRecording</key>
+			<real>760840468.02674699</real>
+			<key>title</key>
+			<string>Build Reminder Roast</string>
+			<key>uniqueIdentifier</key>
+			<string>986DB0F0-6947-47B8-8A35-3D0AECB7BC6A</string>
 		</dict>
 		<key>99DEFF0F-DE1C-4A59-8A80-5F63CA79C3EC</key>
 		<dict>
@@ -3618,6 +4248,48 @@
 			<key>uniqueIdentifier</key>
 			<string>AEAE09CA-616E-4C4D-B9C7-548D1BC7D9D0</string>
 		</dict>
+		<key>AF1AC144-436A-457F-89BC-327EF6115BBC</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AF1AC144-436A-457F-89BC-327EF6115BBC.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reminder Roast project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reminder Roast</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Reminder Roast</string>
+			<key>timeStartedRecording</key>
+			<real>760840201.988415</real>
+			<key>timeStoppedRecording</key>
+			<real>760840204.74225295</real>
+			<key>title</key>
+			<string>Build Reminder Roast</string>
+			<key>uniqueIdentifier</key>
+			<string>AF1AC144-436A-457F-89BC-327EF6115BBC</string>
+		</dict>
 		<key>B143E9E5-9275-434B-9B29-072ACB6157D7</key>
 		<dict>
 			<key>className</key>
@@ -3870,6 +4542,48 @@
 			<key>uniqueIdentifier</key>
 			<string>BCC91530-4A5F-4C61-8AD3-BB3F21A1F9D0</string>
 		</dict>
+		<key>BFD70B8D-1765-4419-8285-61ADF1F2B01F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>BFD70B8D-1765-4419-8285-61ADF1F2B01F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reminder Roast project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reminder Roast</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Reminder Roast</string>
+			<key>timeStartedRecording</key>
+			<real>760840729.47643197</real>
+			<key>timeStoppedRecording</key>
+			<real>760840730.69481206</real>
+			<key>title</key>
+			<string>Build Reminder Roast</string>
+			<key>uniqueIdentifier</key>
+			<string>BFD70B8D-1765-4419-8285-61ADF1F2B01F</string>
+		</dict>
 		<key>C42F76E8-A5A1-4686-9195-4A28D376B6F7</key>
 		<dict>
 			<key>className</key>
@@ -4037,6 +4751,48 @@
 			<string>Build Reminder Roast</string>
 			<key>uniqueIdentifier</key>
 			<string>D5EB6AEF-2C1F-4620-B94A-B169892F7C27</string>
+		</dict>
+		<key>D61C8857-4E04-4604-B651-B6A4E00495D5</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D61C8857-4E04-4604-B651-B6A4E00495D5.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>1</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>2</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reminder Roast project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reminder Roast</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build (Automatic) Reminder Roast</string>
+			<key>timeStartedRecording</key>
+			<real>760841195.65719604</real>
+			<key>timeStoppedRecording</key>
+			<real>760841199.25372398</real>
+			<key>title</key>
+			<string>Build (Automatic) Reminder Roast</string>
+			<key>uniqueIdentifier</key>
+			<string>D61C8857-4E04-4604-B651-B6A4E00495D5</string>
 		</dict>
 		<key>DA227DE6-CA58-4089-B95E-367AC417FC05</key>
 		<dict>
