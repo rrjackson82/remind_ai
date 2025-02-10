@@ -14,8 +14,13 @@ import func SwiftUI.__designTimeBoolean
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isOnboardingComplete = UserDefaults.standard.bool(forKey: "hasCompletedOnboarding")
     var body: some View {
-        HomeView()
+        if isOnboardingComplete{
+            HomeView()
+        } else {
+            OnboardingView()
+        }
     }
 }
 

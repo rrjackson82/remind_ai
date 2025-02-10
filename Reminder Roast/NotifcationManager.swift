@@ -11,9 +11,11 @@ class NotificationManager {
     static let shared = NotificationManager()
 
     func scheduleNotification(title: String, body: String, date: Date, id: UUID) {
+        let selectedType = UserDefaults.standard.integer(forKey: "notificationType")
+        let notificationBody = newNotificationBody(for: selectedType)
         let content = UNMutableNotificationContent()
-        content.title = "Due date for task " + title
-        content.body = newNotificationBody(for: 0)
+        content.title = title
+        content.body = notificationBody
         content.sound = .default
 
         let trigger = UNCalendarNotificationTrigger(

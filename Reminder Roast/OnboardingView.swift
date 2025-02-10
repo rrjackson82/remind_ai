@@ -12,7 +12,8 @@ struct OnboardingView: View {
 
     var body: some View {
         if isOnboardingComplete {
-            ContentView() // Replace with your main app view
+//            ContentView()// Replace with your main app view
+            HomeView()
         } else {
             VStack {
                 Text("Choose your motivation style:")
@@ -59,4 +60,8 @@ struct OnboardingView: View {
         UserDefaults.standard.set(true, forKey: "hasCompletedOnboarding")
         isOnboardingComplete = true
     }
+}
+
+#Preview {
+    OnboardingView()
 }
