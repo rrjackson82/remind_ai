@@ -6,48 +6,56 @@
         "comment": "",
         "key": "Settings",
         "location": {
-          "startingColumn": 26,
-          "startingLine": 38
+          "startingColumn": 34,
+          "startingLine": 29
         }
       },
       {
         "comment": "",
-        "key": "Notification Style",
+        "key": "Notifications",
         "location": {
-          "startingColumn": 18,
-          "startingLine": 15
-        }
-      },
-      {
-        "comment": "",
-        "key": "Select Notification Type",
-        "location": {
-          "startingColumn": 20,
-          "startingLine": 19
+          "startingColumn": 42,
+          "startingLine": 12
         }
       },
       {
         "comment": "",
         "key": "Encouraging 😊",
         "location": {
-          "startingColumn": 22,
-          "startingLine": 20
+          "startingColumn": 36,
+          "startingLine": 14
         }
       },
       {
         "comment": "",
         "key": "Neutral ✨",
         "location": {
-          "startingColumn": 22,
-          "startingLine": 21
+          "startingColumn": 36,
+          "startingLine": 15
         }
       },
       {
         "comment": "",
         "key": "Roast Me 🔥",
         "location": {
+          "startingColumn": 36,
+          "startingLine": 16
+        }
+      },
+      {
+        "comment": "",
+        "key": "Type",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 19
+        }
+      },
+      {
+        "comment": "",
+        "key": "🔥",
+        "location": {
           "startingColumn": 22,
-          "startingLine": 22
+          "startingLine": 34
         }
       }
     ]

@@ -1,0 +1,56 @@
+{
+  "source": "/Users/daneohr/Downloads/Xcode Projects/Reminder Roast/Reminder Roast/Reminder Roast/NotificationTypePopover.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Notification Style",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 15
+        }
+      },
+      {
+        "comment": "",
+        "key": "Select Notification Type",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 19
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save & Close",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 27
+        }
+      },
+      {
+        "comment": "",
+        "key": "Encouraging 😊",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 20
+        }
+      },
+      {
+        "comment": "",
+        "key": "Neutral ✨",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 21
+        }
+      },
+      {
+        "comment": "",
+        "key": "Roast Me 🔥",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 22
+        }
+      }
+    ]
+  },
+  "version": 1
+}

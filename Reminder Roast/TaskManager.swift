@@ -101,6 +101,14 @@ class TaskManager: ObservableObject {
         for (sectionId, sectionTasks) in tasks[listId] ?? [:] {
             if let index = sectionTasks.firstIndex(where: { $0.id == taskId }) {
                 var task = sectionTasks[index]
+                if task.isCompleted {
+                    // Task is being marked as incomplete
+                    NotificationManager.shared.cancelNotification(for: taskId)  // Cancel any existing
+                        NotificationManager.shared.scheduleNotification(for: task)  // Recreate notification
+                } else {
+                    // Task is being marked as complete
+                    NotificationManager.shared.cancelNotification(for: taskId)
+                }
                 task.isCompleted.toggle()
                 tasks[listId]?[sectionId]?[index] = task
                 sortTasks(in: listId)
